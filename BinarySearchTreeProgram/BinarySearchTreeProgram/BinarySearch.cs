@@ -21,6 +21,18 @@ namespace BinarySearchTreeProgram
                 treeSize++;
             }
         }
+        /// <summary>
+        /// displaying size of tree
+        /// </summary>
+        /// <returns></returns>
+        public int Size()
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Binary Search Tree is Empty");
+            }
+            return treeSize;
+        }
         public void Display()
         {
             if (root == null)

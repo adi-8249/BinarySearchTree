@@ -33,6 +33,23 @@ namespace BinarySearchTreeProgram
             }
             return treeSize;
         }
+        /// <summary>
+        /// here we are searching for the given element 63 from the binary search tree
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public int Search(int data)
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Binary Search Tree is Empty");
+                return 0;
+            }
+            else
+            {
+                return root.Search(data);
+            }
+        }
         public void Display()
         {
             if (root == null)

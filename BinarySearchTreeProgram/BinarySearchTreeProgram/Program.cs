@@ -14,7 +14,7 @@ namespace BinarySearchTreeProgram
             binary.Insert(70);
             binary.Display();
             Console.WriteLine();
-            //UC2-Adding element of given elements
+            //UC2-inserting element of given elements with Insert method
             binary.Insert(30);
             binary.Insert(70);
             binary.Insert(22);
@@ -29,6 +29,9 @@ namespace BinarySearchTreeProgram
             binary.Insert(67);
             binary.Display();
             Console.WriteLine("size of binary search tree is : " + binary.Size());//Displaying the size of tree
+            //
+            //UC3- finding the element in 63 from the binary tree
+            Console.WriteLine("element " + binary.Search(63) + " found in binary search tree");
         }
     }
 }
